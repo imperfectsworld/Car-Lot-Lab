@@ -10,7 +10,7 @@ namespace Car_Lot_Lab
     {
         //parameters 
 
-        public string Make {  get; set; }
+        public string Make { get; set; }
         public string Model { get; set; }
         public int Year { get; set; }
         public decimal Price { get; set; }
@@ -43,6 +43,16 @@ namespace Car_Lot_Lab
         {
 
             return ($"{Make}\t\t{Model}\t\t{Year}\t\t{Price}");
+            //return (String.Format("{0,10} {1,10} {3,10} {4,10}", $"{Make}", $"{Model}", $"{Year}", $"{Price}"));
+        }
+
+        public static List<Car> Inventory = new List<Car>();
+        public static void ListCars(List<Car> list)
+        {
+            for(int i = 0; i < list.Count; i++)
+            {
+                Console.WriteLine($"{i + 1} {list[i]}");
+            }
         }
     }
 }
