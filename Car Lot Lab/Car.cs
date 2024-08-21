@@ -42,7 +42,7 @@ namespace Car_Lot_Lab
         public override string ToString()
         {
 
-            return ($"{Make}\t\t{Model}\t\t{Year}\t\t{Price}");
+            return ($"{Make}\t\t{Model}\t\t{Year}\t\t${Price}");
             //return (String.Format("{0,10} {1,10} {3,10} {4,10}", $"{Make}", $"{Model}", $"{Year}", $"{Price}"));
         }
 
@@ -54,6 +54,21 @@ namespace Car_Lot_Lab
                 Console.WriteLine($"{i + 1} {list[i]}");
             }
         }
+
+        public static void Remove (int index)
+        {
+           
+            Car.Inventory.RemoveAt(index-1);
+            
+        }
+
+
+
+
+
+
+
+
     }
 }
 

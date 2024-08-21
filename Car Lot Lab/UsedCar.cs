@@ -19,7 +19,7 @@ namespace Car_Lot_Lab
         }
         public override string ToString()
         {
-            return($"{Make}\t\t{Model}\t\t{Year}\t\t{Price}\t\t{Mileage}");
+            return($"{Make}\t\t{Model}\t\t{Year}\t\t${Price}\t\t{Mileage}");
             //return (String.Format("{0,10} {1,10} {3,10} {4,10} {5,10}", $"{Make}", $"{Model}", $"{Year}", $"{Price}", $"{Mileage}"));
         }
     }
