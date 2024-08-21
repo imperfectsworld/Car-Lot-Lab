@@ -28,3 +28,5 @@ Console.WriteLine(Car.Inventory[index - 1].ToString());
 Car.Remove(index);
 
 Car.ListCars(Car.Inventory);
+
+//proof that brady made a commit
